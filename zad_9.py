@@ -9,20 +9,20 @@ def quadratic_equation(abc):
     b = int(abc[1])
     c = int(abc[2])
     print(abc)
-    if(a == 0):
+    if a == 0:
         print("to nie jest rownanie kwadratowe\n")
-    if(a != 0):
+    if a != 0:
         delta = b * b - 4 * a * c
 
-        if(delta > 0):
+        if delta > 0:
             x1 = (-b - math.sqrt(delta)) / (2 * a)
             x2 = (-b + math.sqrt(delta)) / (2 * a)
             print(x1,x2)
 
-        if(delta < 0):
+        if delta < 0:
             print("brak rozwiazania\n")
 
-        if(delta == 0):
+        if delta == 0:
             x1 = -b / (2 * a)
             print(x1)
 
