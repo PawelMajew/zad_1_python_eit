@@ -4,10 +4,10 @@
 if __name__ == '__main__':
     text_file = open("text_1.txt", "r+")
 
-    temp = text_file.read()
-    #trzeba dodać spacje na końcu słowa
-    vowel = ["i","jak","pojęcia"]
-    for i in vowel:
-        temp = temp.replace(i, "")
+    temp_text = text_file.read()
 
-    print(temp)
+    list = ["a ","ku ","widzi "]
+    for next_element in list:
+        temp_text = temp_text.replace(next_element, "")
+
+    print(temp_text)
