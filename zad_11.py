@@ -1,5 +1,7 @@
 #Paweł Majewski EiT Programowanie w języku Python
 #zad_11
+# Napisz skrypt obliczający wartość iloczynu dwóch wektorów:
+# a = [1, 2, 12, 4], b = [2, 4, 2, 8], tzw. iloczyn skalarny wektorów
 def matrix_multiplication(a, b):
     c = 0
     if len(a) == len(b):
@@ -15,4 +17,4 @@ if __name__ == '__main__':
     a = [1, 2, 12, 4]
     b = [2, 4, 2, 8]
 
-    matrix_multiplication(a,b)
+    matrix_multiplication(a, b)
