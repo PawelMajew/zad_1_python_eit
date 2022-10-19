@@ -7,8 +7,7 @@ import os
 
 
 def show_count(path):
-    with open('FileData_count.txt', 'w') as  file_output:
-        # with path.open('r') as f
+    with open('FileData_count.txt', 'w') as file_output:
 
         for path, subfiles, files in os.walk(path):
             file_output.write('=' * 70 + '\n')
@@ -20,7 +19,6 @@ def show_count(path):
                 file_output.write("ilosc plikow: " + str(count) + '\n')
             else:
                 file_output.write("ilosc plikow: 0\n")
-    # file_output.close()
 
 
 if __name__ == '__main__':
