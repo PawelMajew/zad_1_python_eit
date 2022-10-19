@@ -1,9 +1,15 @@
 #Paweł Majewski EiT Programowanie w języku Python
 #zad_9
+# Napisz skrypt obliczający pierwiastki równania kwadratowego
+# w postaci : y = ax2+bx+c. Wejściem skryptu są wartości: a, b, c
 
 import math
+
+
 def get_value():
-    return  input("podaj wartosci rownania a, b, c\n")
+    return input("podaj wartosci rownania a, b, c\n")
+
+
 def quadratic_equation(abc):
     a = int(abc[0])
     b = int(abc[1])
@@ -26,12 +32,17 @@ def quadratic_equation(abc):
             x1 = -b / (2 * a)
             print(x1)
 
-if __name__ == '__main__':
-
+def engine():
     while 1:
         try:
             temp = get_value()
             quadratic_equation(temp.split())
-            break;
+            break
         except ValueError:
             print("zle wartosci jeszcze raz\n")
+
+
+if __name__ == '__main__':
+
+    engine()
+
