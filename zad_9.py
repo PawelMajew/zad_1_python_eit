@@ -32,6 +32,7 @@ def quadratic_equation(abc):
             x1 = -b / (2 * a)
             print(x1)
 
+
 def engine():
     while 1:
         try:
