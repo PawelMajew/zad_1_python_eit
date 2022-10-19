@@ -1,7 +1,13 @@
 #Paweł Majewski EiT Programowanie w języku Python
 #zad_10
+# Napisz skrypt sortujący liczby malejąco. Wygeneruj losowo 50
+# liczb - wykorzystąj standardową funkcje do losowania. Z wbudowanej funkcji sortującej korzystaj tylko
+# w celu weryfikacji wyników
+
 import random
-def bubbleSort(arr):
+
+
+def My_Sort(arr):
     n = len(arr)
     swapped = False
     for i in range(n - 1):
@@ -13,20 +19,26 @@ def bubbleSort(arr):
         if not swapped:
             return
 
-tab = []
+
+def Check_Sort(my_tab, correct_sort):
+    not_correct_count = 0
+    for next_item in range(50):
+        if correct_sort[next_item] != my_tab[next_item]:
+            not_correct_count+=1
+    if not_correct_count == 0:
+        print("sorted correct\n")
+    else:
+        print("sorted not correct\n")
+
+
 if __name__ == '__main__':
+    tab = []
+    temp_tab_1 = []
     for i in range(50):
         tab.append(random.randint(1,200))
-
-    # print(tab)
-    temp_1 = tab
-    temp_2 = tab
-
-    bubbleSort(temp_1)
-    # print(temp_1)
-    temp_2.sort()
     for i in range(50):
-        if(temp_1[i] != temp_2[i]):
-            print("not")
-    # print("\n")
-    #print(tab)
+        temp_tab_1.append(tab[i])
+
+    My_Sort(tab)                #my sort
+    temp_tab_1.sort()           #correct sort
+    Check_Sort(tab,temp_tab_1)  #test
