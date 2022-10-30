@@ -31,7 +31,7 @@ def Check_Sort(my_tab, correct_sort):
         print("sorted not correct\n")
 
 
-if __name__ == '__main__':
+def main():
     tab = []
     temp_tab_1 = []
     for i in range(50):
@@ -42,3 +42,7 @@ if __name__ == '__main__':
     My_Sort(tab)                #my sort
     temp_tab_1.sort()           #correct sort
     Check_Sort(tab,temp_tab_1)  #test
+
+
+if __name__ == '__main__':
+    main()
