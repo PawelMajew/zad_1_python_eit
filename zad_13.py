@@ -42,21 +42,3 @@ if __name__ == '__main__':
 
 
 
-
-    # c = [[0]*n for i in range(n)]
-    # d = [[0]*n for i in range(n)]
-    # e = [[0]*n for i in range(n)]
-    #
-    # #rozmiar nowej macierzy
-    # for i in range(0,n):
-    #     for j in range(0,n):
-    #         c[i][j] = random.randint(0,200)
-    #         d[i][j] = random.randint(0,200)
-    #
-    #
-    # for i in range(n):
-    #     for j in range(n):
-    #         for k in range(n):
-    #             e[i][j] = e[i][j] + c[i][k] * d[k][j]
-
-
